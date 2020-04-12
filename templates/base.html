@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+	<link rel="stylesheet" href="/media/css/style.css" />
+	<title>{% block title %} Page d'accueil de gestion des stocks {% endblock %} </title>
+</head>
+<body>
+<header>Gestion des dates d'expiration</header>
+	<section id="content">
+		{% block content %}{% endblock %}
+	</section>
+	
+	<nav>
+		{% block nav %}
+		<ul>
+			<li><a href="/liste_produits/">Liste des produits</a></li>
+			<li><a href="/recherche/">Rechercher un produit</a></li>
+			<li><a href="/ajout/">Mise à jour/Ajout</a></li>
+		</ul>
+		{% endblock %}
+	</nav>
+
+<footer>&copy; Stocks</footer>
+</body>
+</html>

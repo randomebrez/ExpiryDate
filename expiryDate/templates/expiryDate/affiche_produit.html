@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %} Resultat de la recherche {% endblock %}
+{% block content %}
+<p> La date d'expiration la plus proche pour le produit numéro {{ produit.reference }} est {{produit.expiryDate }}
+{% endblock %}
+
+{% block nav %}
+	<ul>
+		<li><a href="/">Menu principal</a></li>
+		<li><a href="/recherche">Rechercher un autre produit </a></li>
+	</ul>
+{% endblock %}

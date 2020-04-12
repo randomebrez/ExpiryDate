@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %} Liste des produits en stocks {% endblock %}
+
+{% block content %}
+{% for produit in produits %}
+	<div class="produit">
+		<p>Référence produit : {{ produit.reference }} Date d'expiration :   {{ produit.expiryDate }} </p>
+
+{% empty %}
+	<p> Aucun produit en stock <p>
+{% endfor %}
+{% endblock %}
+
+{% block nav %}
+	<ul>
+		<li><a href="/"> Menu Principal</a></li>
+	</ul>
+{% endblock %}
+
+
+
